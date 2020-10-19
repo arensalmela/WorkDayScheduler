@@ -30,7 +30,11 @@
     </header>
     <div class="container">
       <!-- Timeblocks go here -->
-      <div id ="9am" class ="row saveBtn"></div>
+      <div id ="hour-9" class ="row time-block">
+        <div class = "col-1 hour">9AM</div>
+        <textarea class = "col-10 userInput"></textarea>
+        <button class = "col-1 saveBtn"></button>
+      </div>
       <div id ="10am" class ="row saveBtn"></div>
       <div id ="11am" class ="row saveBtn"></div>
       <div id ="12pm" class ="row saveBtn"></div>
@@ -41,8 +45,7 @@
       <div id ="5pm" class ="row saveBtn"></div>
     </div>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-    <script src = "./lib/moment/moment.min.js"></script>
-    <script src = "./lib/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script> <!--Moment-->
+    <script src ="./script.js"></script>
   </body>  
 </html>
