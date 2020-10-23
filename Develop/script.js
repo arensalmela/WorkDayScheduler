@@ -34,8 +34,7 @@ function timeBlockUpdate(){
     }
 
     timeBlockUpdate()
-    var hourInterval = setInterval(timeBlockUpdate(), 10000) // Interval to check if current time needs updating
-    $("#hour-8 .userInput").val(localStorage.getItem("hour-9")) //Repeat for every hour
+    $("#hour-8 .userInput").val(localStorage.getItem("hour-8")) //Repeat for every hour
 
     
     //Displaying current day
