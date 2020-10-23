@@ -13,6 +13,7 @@ $(".saveBtn").on("click",function(){
 function timeBlockUpdate(){
     //currentHour is set to current hour number
     var currentHour = moment().hours(); 
+    //Function runs for each <div> that has the time-block class
     $(".time-block").each(function(){
     //Variable is set to grab hour number. Index 1 of id is the hour number using split.
     var hourBlock = parseInt($(this).attr("id").split("-")[1])
@@ -32,10 +33,18 @@ function timeBlockUpdate(){
     }
     })
     }
-
+    //Getting item through local storage. Hour-"" is the key. 
     timeBlockUpdate()
-    $("#hour-8 .userInput").val(localStorage.getItem("hour-8")) //Repeat for every hour
-
+    $("#hour-8 .userInput").val(localStorage.getItem("hour-8")) 
+    $("#hour-9 .userInput").val(localStorage.getItem("hour-9"))
+    $("#hour-10 .userInput").val(localStorage.getItem("hour-10"))
+    $("#hour-11 .userInput").val(localStorage.getItem("hour-11"))
+    $("#hour-12 .userInput").val(localStorage.getItem("hour-12"))
+    $("#hour-13 .userInput").val(localStorage.getItem("hour-13"))
+    $("#hour-14 .userInput").val(localStorage.getItem("hour-14"))
+    $("#hour-15 .userInput").val(localStorage.getItem("hour-15"))
+    $("#hour-16 .userInput").val(localStorage.getItem("hour-16"))
+    $("#hour-17 .userInput").val(localStorage.getItem("hour-17"))
     
     //Displaying current day
 $("#currentDay").text(moment().format("MMMM Do YYYY")); 
